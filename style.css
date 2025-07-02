@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    height:100vh;
+}
+
+#left-col {
+    
+}
+
+#right-col {
+    
+}
+
+.col-centered {
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+
+.base-image,
+.overlay-image {
+    display: block;
+    width: 40vw;
+    height: auto;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    filter: none;
+}
+
+select {
+    margin-top: 10px;
+}
