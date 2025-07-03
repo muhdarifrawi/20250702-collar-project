@@ -1,0 +1,17 @@
+/* code from logrocket: https://blog.logrocket.com/creating-custom-select-dropdown-css/ */
+.custom-select {
+    min-width: 350px;
+    position: relative;
+    appearance: none;
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    color: #000;
+    cursor: pointer;
+    background: url(../icons/caret-down.png) no-repeat;
+    background-position: calc(100% - 0.75rem) center;
+    background-size: 3%;
+}
+

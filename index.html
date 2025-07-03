@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-select.css" />
     <title>Rope Color Overlay</title>
     <style></style>
   </head>
@@ -18,15 +19,16 @@
           <img
             src="test-collar-orange-to-white.png"
             alt="Colored Rope Overlay"
-            class="overlay-image"
+            class="overlay-image overlay-image-options"
             id="overlay"
           />
         </div>
       </div>
       <div id="right-col" class="col-centered">
         <!-- Color selector -->
-        <label for="color">Choose rope tint:</label>
-        <select id="color">
+        <label for="color" class="select-label">FIRST COLOUR</label>
+        <select id="color" class="custom-select">
+          <option value="">Select Colour</option>
           <option value="none">Original</option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
@@ -37,22 +39,7 @@
       </div>
     </div>
 
-    <script>
-      const overlay = document.getElementById("overlay");
-      const colorPicker = document.getElementById("color");
-
-      const filters = {
-        none: "none",
-        red: "sepia(1) hue-rotate(-20deg) saturate(6)",
-        blue: "sepia(1) hue-rotate(170deg) saturate(6)",
-        green: "sepia(1) hue-rotate(90deg) saturate(6)",
-        purple: "sepia(1) hue-rotate(250deg) saturate(6)",
-        black: "grayscale(1) brightness(0.3)",
-      };
-
-      colorPicker.addEventListener("change", (e) => {
-        overlay.style.filter = filters[e.target.value];
-      });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/custom-select.js"></script>
   </body>
 </html>
